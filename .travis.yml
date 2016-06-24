@@ -1,0 +1,15 @@
+language: c
+
+before_install:
+    - sudo apt-add-repository --yes ppa:vala-team
+    - sudo apt-get update --quiet
+    - sudo apt-get install --yes valac libglib-2.0-dev
+
+script:
+    - valac --ccode --debug hello.vala
+    - gcc $(pkg-config --cflags --libs glib-2.0) -ftest-coverage -fprofile-arcs -o hello hello.c
+    - ./hello
+    - gcov hello.vala
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
