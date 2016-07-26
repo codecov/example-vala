@@ -1,6 +1,6 @@
 # Codecov Vala Example
 
-[![codecov](https://codecov.io/gh/arteymix/example-vala/branch/master/graph/badge.svg)](https://codecov.io/gh/arteymix/example-vala)
+[![codecov](https://codecov.io/gh/codecov/example-vala/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/example-vala)
 
 # Usage
 
@@ -15,3 +15,20 @@ gcc $(pkg-config --cflags --libs glib-2.0 gobject-2.0) -ftest-coverage -fprofile
 gcov hello.vala
 ```
 
+# Travis CI
+
+Add to your `.travis.yml` file.
+```yml
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+
+> All other CI you can simply run `bash <(curl -s https://codecov.io/bash)`.
+
+## Private Repos
+
+Include your Codecov upload token found in the repository settings page on Codecov
+```yml
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t repo-upload-token
+```
