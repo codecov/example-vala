@@ -7,7 +7,7 @@ before_install:
 
 script:
     - valac --ccode --debug hello.vala
-    - gcc $(pkg-config --cflags glib-2.0) -ftest-coverage -fprofile-arcs -o hello hello.c $(pkg-config --libs glib-2.0)
+    - gcc $(pkg-config --cflags glib-2.0 gobject-2.0) -ftest-coverage -fprofile-arcs -o hello hello.c $(pkg-config --libs glib-2.0 gobject-2.0)
     - ./hello
     - gcov hello.vala
 
