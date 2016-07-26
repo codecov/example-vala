@@ -21,6 +21,17 @@ gcc $(pkg-config --cflags --libs glib-2.0 gobject-2.0) -ftest-coverage -fprofile
 gcov hello.vala
 ```
 
+## Meson
+
+To enable coverage with [Meson][5], specify the `-D b_coverage=true` project option.
+
+```bash
+mkdir build && cd build
+meson -D b_coverage=true ..
+ninja
+ninja test
+```
+
 # Travis CI
 
 Add to your `.travis.yml` file.
@@ -45,3 +56,4 @@ View source and learn more about [Codecov Global Uploader][4]
 [2]: https://twitter.com/codecov
 [3]: mailto:hello@codecov.io
 [4]: https://github.com/codecov/codecov-bash
+[5]: http://mesonbuild.com/
