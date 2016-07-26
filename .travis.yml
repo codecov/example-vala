@@ -3,7 +3,7 @@ language: c
 before_install:
     - sudo apt-add-repository --yes ppa:vala-team
     - sudo apt-get update --quiet
-    - sudo apt-get install --yes valac libglib-2.0-dev
+    - sudo apt-get install --yes valac libglib2.0-dev
 
 script:
     - valac --ccode --debug hello.vala
