@@ -1,5 +1,6 @@
 # Codecov Vala Example
 
+[![Build Status](https://travis-ci.org/codecov/example-vala.svg?branch=master)](https://travis-ci.org/codecov/example-vala)
 [![codecov](https://codecov.io/gh/codecov/example-vala/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/example-vala)
 
 | [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
