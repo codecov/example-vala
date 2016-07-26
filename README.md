@@ -2,6 +2,11 @@
 
 [![codecov](https://codecov.io/gh/codecov/example-vala/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/example-vala)
 
+| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
+| ----------------------- | ------------- | --------------------- |
+
+This repository serves as an **example** on how to use [Codecov Global][4] for Vala.
+
 # Usage
 
 Since Vala translate to C, [the usage same directives for C/C++](https://github.com/codecov/example-c)
@@ -32,3 +37,10 @@ Include your Codecov upload token found in the repository settings page on Codec
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t repo-upload-token
 ```
+
+View source and learn more about [Codecov Global Uploader][4]
+
+[1]: https://codecov.io/
+[2]: https://twitter.com/codecov
+[3]: mailto:hello@codecov.io
+[4]: https://github.com/codecov/codecov-bash
