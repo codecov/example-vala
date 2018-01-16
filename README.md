@@ -54,7 +54,4 @@ after_success:
 
 
 [1]: https://codecov.io/
-[2]: https://github.com/codecov/example-php/blob/master/.travis.yml#L15
-[3]: https://github.com/codecov/example-php/blob/master/.travis.yml#L18
-[4]: https://github.com/codecov/codecov-python
 [5]: http://mesonbuild.com/
