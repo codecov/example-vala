@@ -44,8 +44,8 @@ after_success:
 
 ### Contact
 - Intercom (in-app messanger)
-- Email: support@codecov.io
-- Slack: slack.codecov.io
+- Email: [support@codecov.io](mailto:support@codecov.io)
+- Slack: [slack.codecov.io](https://slack.codecov.io)
 - [gh/codecov/support](https://github.com/codecov/support)
 
 1. More documentation at https://docs.codecov.io
